@@ -1,8 +1,6 @@
-# Light/Dark Theme Demo App (Starter Code)
+# Light/Dark Theme Demo App
 
-This is the starter code for a demo app to show developers how to create a light/dark theme toggle option for their website.
-
-This starter code shows the dark theme.
+This is a demo app to show developers how to create a light/dark theme toggle option for their website.
 
 ## Getting Started with Create React App
 
