@@ -1,0 +1,19 @@
+@import "../styles/colors";
+
+.btn-theme {
+  background-color: $purple100;
+  border: none;
+  color: $grey100;
+  display: block;
+  font-size: 1.2rem;
+  font-weight: 600;
+  width: 150px;
+  padding: 5px;
+  text-align: center;
+  margin: 0;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $purple200;
+  }
+}
