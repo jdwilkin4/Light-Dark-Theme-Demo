@@ -5,6 +5,7 @@ body {
   background-color: var(--bgThemeColor1);
   color: var(--textThemeColor1);
   text-align: center;
+  transition: background-color 0.5s ease;
 }
 
 h1 {
