@@ -1,8 +1,9 @@
 @import "./styles/colors";
+@import "./styles/_light-dark-theme.scss";
 
 body {
-  background-color: $blue700;
-  color: $grey100;
+  background-color: var(--bgThemeColor1);
+  color: var(--textThemeColor1);
   text-align: center;
 }
 
