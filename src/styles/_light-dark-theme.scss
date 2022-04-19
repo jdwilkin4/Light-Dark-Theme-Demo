@@ -1,0 +1,34 @@
+@import "src/styles/colors";
+
+$themes: (
+  bgThemeColor1: (
+    darkTheme: $blue700,
+    lightTheme: $grey100,
+  ),
+  bgThemeColor2: (
+    darkTheme: $blue600,
+    lightTheme: $grey200,
+  ),
+  textThemeColor1: (
+    darkTheme: $grey100,
+    lightTheme: $black,
+  ),
+);
+
+@mixin styles($mode) {
+  @each $key, $map in $themes {
+    @each $prop, $color in $map {
+      @if $prop == $mode {
+        --#{$key}: #{$color};
+      }
+    }
+  }
+}
+
+.dark-mode {
+  @include styles("darkTheme");
+}
+
+.light-mode {
+  @include styles("lightTheme");
+}
