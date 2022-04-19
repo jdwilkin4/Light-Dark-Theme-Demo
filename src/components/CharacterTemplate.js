@@ -1,10 +1,12 @@
-import React from 'react';
-import { useEffect, useState } from 'react';
-import { Button } from '../components/Button';
-import PropTypes from 'prop-types';
-import './CharacterTemplate.scss';
+import React from "react";
+import { useEffect, useState } from "react";
+import { Button } from "../components/Button";
+import PropTypes from "prop-types";
+import { useTheme } from "../utils/useTheme";
+import "./CharacterTemplate.scss";
 
 export const CharacterTemplate = ({ api, title }) => {
+  const theme = useTheme();
   const [characterInfo, setCharacterInfo] = useState([]);
   const [error, setError] = useState(null);
   const [isLoaded, setIsLoaded] = useState(false);
@@ -34,7 +36,7 @@ export const CharacterTemplate = ({ api, title }) => {
   }
 
   return (
-    <>
+    <div className={theme}>
       <h1>{title}</h1>
       <Button text="Return Home" path="/" />
       <div className="flex-container">
@@ -45,7 +47,7 @@ export const CharacterTemplate = ({ api, title }) => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
