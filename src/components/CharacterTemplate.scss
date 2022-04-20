@@ -1,4 +1,5 @@
 @import "../styles/colors";
+@import "../styles/light-dark-theme";
 
 .flex-container {
   display: flex;
@@ -6,8 +7,8 @@
   justify-content: space-evenly;
 
   .character-container {
-    color: $grey100;
-    background-color: $blue600;
+    color: var(--textThemeColor1);
+    background-color: var(--bgThemeColor2);
     width: 300px;
     margin: 10px 0;
 
